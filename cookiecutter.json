@@ -1,21 +1,21 @@
 {
   "project_name": "My project name",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
-  "init_git": true,
+  "init_git": false,
   "git_email": "email@example.com",
   "git_username": "my-git-username",
-  "push_git": false,
-  "git_repo_url": "https://github.com/{{ cookiecutter.git_username }}/{{ cookiecutter.project_slug }}.git",
   "git_main_branch": "main",
+  "license": ["None", "MIT", "GNU GPL v3.0", "Apache Software License 2.0"],
+  "author": "{{ cookiecutter.git_username }}",
   "__prompts__": {
     "project_name": "Project name",
     "project_slug": "Root directory for new repo",
     "init_git": "Initialize a git repository ?",
     "git_email": "Git email (only for git init)",
     "git_username": "Git username (only for git init)",
-    "push_git": "Push initial commit to an empty git repository ?",
-    "git_repo_url": "Git repo url (only for git init)",
-    "git_main_branch": "Git main branch (only for git init)"
+    "git_main_branch": "Git main branch (only for git init)",
+    "license": "Choose a license",
+    "author": "Author (for license)"
   },
   "_new_lines": "\n",
   "_copy_without_render": [
